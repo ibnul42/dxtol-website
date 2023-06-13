@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-gradient{
+    background: linear-gradient(90deg, #1BB0BE 0%, #2958FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.btngradient{
+    background: linear-gradient(90deg, #1BB0BE 0%, #2958FF 100%);
+    border-radius: 5px;
+}
+
+.card-background{
+    background: rgba(253, 209, 14, 0.05);
+    box-shadow: -2px 2px 60px rgba(41, 88, 255, 0.05);
+    border-radius: 10px;
+}
+
+/* .service-card {
+    background: linear-gradient(90deg, rgba(27, 176, 190, 0.2) 0%, rgba(41, 88, 255, 0.2) 100%);
+    border-radius: 10px;
+} */
