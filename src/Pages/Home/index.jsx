@@ -68,13 +68,13 @@ const Home = () => {
       </div>
       <div className="bg-primary font-poppins">
         <div className="max-w-6xl mx-auto px-2 py-5 md:gap-40">
-          <p className='text-yellow font-secure font-semibold leading-7 uppercase'>Our Services:</p>
+          <p className='text-yellow font-secure font-semibold leading-7 uppercase'>Our Services</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <p className='text-xl md:text-2xl lg:text-4xl text-gradient font-secure font-extrabold'>We Provide the BestService Ubiquiti Unifi network</p>
+            <p className='text-xl md:text-2xl lg:text-3xl text-gradient font-secure font-extrabold'>We Provide the Best Service Ubiquiti Unifi network</p>
             <p className='text-gray text-xs my-2'>Lorem ipsum dolor sit amet consectetur. Purus massa sit nulla non non bibendum. A mauris amet in massa diam id. Sit nec sed pulvinar et mi consectetur feugiat. Congue sit iaculis qu</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:grid-cols-4 my-5">
-            <div className="rounded-lg flex flex-col gap-4 bg-gradient-to-r from-[rgba(27,176,190,0.2)] to-[rgba(41,88,255,0.2)] py-2 px-3">
+            <div className="rounded-lg h-64 flex flex-col gap-4 justify-center bg-gradient-to-r from-[rgba(27,176,190,0.2)] to-[rgba(41,88,255,0.2)] py-2 px-3">
               <p className='text-[#A0BCF8] text-3xl font-medium opacity-25'>01</p>
               <p className='text-gradient font-secure text-xl uppercase font-bold'>Network Installation</p>
               <p className='font-poppins text-gray text-xs'>Lorem ipsum dolor sit amet con sec tetur. Purus massa sit nu ll a non non bibendum. A mauris ame</p>
@@ -86,9 +86,9 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="rounded-lg flex flex-col gap-4 bg-[#FDD10E] py-2 px-3">
+            <div className="rounded-lg h-64 flex flex-col gap-4 justify-center bg-[#FDD10E] py-2 px-3">
               <p className='text-[#A0BCF8] text-3xl font-medium opacity-25'>01</p>
-              <p className='text-gradient font-secure text-xl uppercase font-bold'>Network Installation</p>
+              <p className='text-gradient font-secure text-xl uppercase font-bold'>Security</p>
               <p className='font-poppins text-gray text-xs'>Lorem ipsum dolor sit amet con sec tetur. Purus massa sit nu ll a non non bibendum. A mauris ame</p>
               <div className="flex justify-end">
                 <div className="h-10 w-10 rounded-full bg-gradient-to-r from-[#1BB0BE] to-[#1BB0BE] p-[2px]">
@@ -98,9 +98,9 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="rounded-lg flex flex-col gap-4 bg-gradient-to-r from-[rgba(27,176,190,0.2)] to-[rgba(41,88,255,0.2)] py-2 px-3">
+            <div className="rounded-lg h-64 flex flex-col gap-4 justify-center bg-gradient-to-r from-[rgba(27,176,190,0.2)] to-[rgba(41,88,255,0.2)] py-2 px-3">
               <p className='text-[#A0BCF8] text-3xl font-medium opacity-25'>01</p>
-              <p className='text-gradient font-secure text-xl uppercase font-bold'>Network Installation</p>
+              <p className='text-gradient font-secure text-xl uppercase font-bold'>Hotels & Developers</p>
               <p className='font-poppins text-gray text-xs'>Lorem ipsum dolor sit amet con sec tetur. Purus massa sit nu ll a non non bibendum. A mauris ame</p>
               <div className="flex justify-end">
                 <div className="h-10 w-10 rounded-full bg-gradient-to-r from-[#1BB0BE] to-[#1BB0BE] p-[2px]">
@@ -110,9 +110,9 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="rounded-lg flex flex-col gap-4 bg-gradient-to-r from-[rgba(27,176,190,0.2)] to-[rgba(41,88,255,0.2)] py-2 px-3">
+            <div className="rounded-lg h-64 flex flex-col gap-4 justify-center bg-gradient-to-r from-[rgba(27,176,190,0.2)] to-[rgba(41,88,255,0.2)] py-2 px-3">
               <p className='text-[#A0BCF8] text-3xl font-medium opacity-25'>01</p>
-              <p className='text-gradient font-secure text-xl uppercase font-bold'>Network Installation</p>
+              <p className='text-gradient font-secure text-xl uppercase font-bold'>Eot</p>
               <p className='font-poppins text-gray text-xs'>Lorem ipsum dolor sit amet con sec tetur. Purus massa sit nu ll a non non bibendum. A mauris ame</p>
               <div className="flex justify-end">
                 <div className="h-10 w-10 rounded-full bg-gradient-to-r from-[#1BB0BE] to-[#1BB0BE] p-[2px]">

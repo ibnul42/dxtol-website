@@ -21,6 +21,16 @@
     border-radius: 10px;
 }
 
+.card-about{
+    background: linear-gradient(90deg, rgba(27, 176, 190, 0.1) 0%, rgba(41, 88, 255, 0.1) 100%);
+    box-shadow: -2px 2px 60px rgba(41, 88, 255, 0.05);
+    border-radius: 10px;
+}
+
+.contact-form {
+    background: linear-gradient(270.59deg, #00021F 0.51%, #06121D 99.57%)
+}
+
 /* .service-card {
     background: linear-gradient(90deg, rgba(27, 176, 190, 0.2) 0%, rgba(41, 88, 255, 0.2) 100%);
     border-radius: 10px;

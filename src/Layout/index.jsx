@@ -77,8 +77,8 @@ const Layout = () => {
         <div className={`${adminPanel ? "col-span-10 bg-white text-black" : ""}`}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/" element={<Home />} />
-            <Route path="/photography" element={<Photography />} />
+            {/* <Route path="/" element={<Home />} />
+            <Route path="/photography" element={<Photography />} /> */}
             <Route path="/about" element={<About />} />
             <Route path="/photography/:type" element={<PhotographDetails />} />
             <Route path="/login" element={<Login />} />
