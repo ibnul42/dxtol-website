@@ -12,7 +12,7 @@ const Home = () => {
     <div className='flex-1'>
       <Helmet>
         <title>Home</title>
-        <link rel="canonical" href="https://www.dylanluper.com" />
+        <link rel="canonical" href="" />
       </Helmet>
       <div className="bg-primary font-poppins">
         <div className="max-w-6xl mx-auto px-2 py-5 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-40">

@@ -2,13 +2,14 @@ import React, { useEffect, useState } from "react"
 import { Helmet } from "react-helmet-async"
 import { Link } from "react-router-dom"
 
-const Login = () => {
+const Signup = () => {
   const [inputValue, setInputValue] = useState({
+    name: "",
     email: "",
     password: "",
   })
 
-  const { email, password } = inputValue
+  const { name, email, password } = inputValue
 
   const onChange = (e) => {
     const { name, value } = e.target
@@ -34,8 +35,23 @@ const Login = () => {
           <p className="font-secure text-gray font-semibold text-sm md:text-lg py-2">Continue with your email or Phone Number</p>
           <div className="w-full h-[1px] bg-gradient-to-r from-[rgba(27,176,190,0.3)] to-[rgba(41,88,255,0.3)] my-1"></div>
           <div className="flex gap-3 my-2">
-            <p className="font-poppins text-gray text-sm lg:text-base">Don’t Have an Account?</p>
-            <Link to="/register" className="text-join font-poppins text-xs lg:text-base underline underline-offset-2 decoration-gray">Join Here</Link>
+            <p className="font-poppins text-gray text-sm lg:text-base">Already have an Account?</p>
+            <Link to="/login" className="text-join font-poppins text-xs lg:text-base underline underline-offset-2 decoration-gray flex items-center gap-3"><img src="/assets/icon/user.svg" alt="user" className="w-4 h-4" />Sign In</Link>
+          </div>
+          <div className="mb-4 my-2">
+            <label className="block text-gray text-xs md:text-sm font-poppins mb-2" htmlFor="name">
+              Full Name
+            </label>
+            <div class="pl-[1px] pr-[2px] py-[2px] rounded-md bg-gradient-to-r from-[#1BB0BE] to-[#2958FF]">
+              <label for="name" class="sr-only">Name</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                value={name}
+                onChange={onChange}
+                class="px-3 py-2 md:py-3 w-full rounded-md bg-[#00042E] focus:outline-none" />
+            </div>
           </div>
           <div className="mb-4 my-2">
             <label className="block text-gray text-xs md:text-sm font-poppins mb-2" htmlFor="email">
@@ -90,4 +106,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Signup

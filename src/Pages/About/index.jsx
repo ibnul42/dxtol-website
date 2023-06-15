@@ -6,7 +6,7 @@ const About = () => {
     <div className='flex-1'>
       <Helmet>
         <title>About Us</title>
-        <link rel="canonical" href="https://www.dylanluper.com/about" />
+        <link rel="canonical" href="" />
       </Helmet>
       <div className="bg-[#00042E]">
         <div className="max-w-6xl mx-auto px-2">

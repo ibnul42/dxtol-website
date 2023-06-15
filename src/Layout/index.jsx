@@ -12,6 +12,8 @@ import AdminHome from "../Pages/Admin/AdminHome"
 import Profile from "../Pages/Admin/Profile"
 import AdminPhotography from "../Pages/Admin/Photography"
 import Login from "../Pages/Login";
+import Signup from "../Pages/Signup";
+import LoginForm from "../Pages/LoginForm";
 
 const adminLinks = [
   { titile: "Profile", path: "/admin/profile" },
@@ -82,6 +84,8 @@ const Layout = () => {
             <Route path="/about" element={<About />} />
             <Route path="/photography/:type" element={<PhotographDetails />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Signup />} />
+            <Route path="/loginform" element={<LoginForm />} />
             <Route path="/admin/profile" element={<Profile />} />
             <Route path="/admin/photography" element={<AdminPhotography />} />
             <Route path="/admin/home" element={<AdminHome />} />

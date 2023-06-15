@@ -50,7 +50,7 @@ function Header({ open, setOpen }) {
           <div className="max-w-6xl mx-auto px-3 lg:px-0 flex justify-between py-2">
             <div className="flex items-center cursor-pointer">
               <NavLink to="/" className="text-xl font-bold">
-                <img src="/assets/logo.png" className="w-10 h-10" alt="Logo" />
+                <img src="/assets/logo.png" className="w-12 h-1w-12" alt="Logo" />
               </NavLink>
             </div>
             <div
