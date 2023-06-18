@@ -1,19 +1,15 @@
 import React, { useEffect, useState } from "react"
 import { Link, Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import Home from "../Pages/Home";
-import Photography from "../Pages/Photography";
 import About from "../Pages/About"
 import Footer from "./Footer"
 import Header from "./Header"
-import PhotographDetails from "../Pages/PhotographDetails";
 import { useDispatch, useSelector } from "react-redux";
 import { logout, reset } from "../features/auth/authSlice";
-import AdminHome from "../Pages/Admin/AdminHome"
-import Profile from "../Pages/Admin/Profile"
-import AdminPhotography from "../Pages/Admin/Photography"
 import Login from "../Pages/Login";
 import Signup from "../Pages/Signup";
 import LoginForm from "../Pages/LoginForm";
+import Policy from "../Pages/Policy";
 
 const adminLinks = [
   { titile: "Profile", path: "/admin/profile" },
@@ -79,16 +75,11 @@ const Layout = () => {
         <div className={`${adminPanel ? "col-span-10 bg-white text-black" : ""}`}>
           <Routes>
             <Route path="/" element={<Home />} />
-            {/* <Route path="/" element={<Home />} />
-            <Route path="/photography" element={<Photography />} /> */}
             <Route path="/about" element={<About />} />
-            <Route path="/photography/:type" element={<PhotographDetails />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Signup />} />
             <Route path="/loginform" element={<LoginForm />} />
-            <Route path="/admin/profile" element={<Profile />} />
-            <Route path="/admin/photography" element={<AdminPhotography />} />
-            <Route path="/admin/home" element={<AdminHome />} />
+            <Route path="/policy" element={<Policy />} />
             <Route path="*" element={<Home />} />
           </Routes>
         </div>

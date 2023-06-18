@@ -23,7 +23,7 @@ const Home = () => {
             <button className='px-3 py-1 btngradient text-white w-fit font-secure font-medium rounded'>Talk with Us</button>
           </div>
           <div className="">
-            <img src="/assets/images/home1.png" className='w-full' alt="" srcset="" />
+            <img src="/assets/images/home1.png" className='w-full' alt="" />
           </div>
         </div>
       </div>
