@@ -2,8 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'secure';
+    src: url('./fonts/SourceSansPro.ttf') format('truetype');
+    /* Add additional src declarations for other font formats, if available */
+    font-weight: bold;
+    /* font-style: normal; */
+  }
+
 .text-gradient{
     background: linear-gradient(90deg, #1BB0BE 0%, #2958FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+/* .bg-gradient_network{
+    background: linear-gradient(90deg, #1BB0BE 0%, #2958FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+} */
+
+.testimonial-gradient{
+    background: linear-gradient(90deg, rgba(27, 176, 190, 0.2) 0%, rgba(41, 88, 255, 0.2) 100%);
+/* shadow */
+
+box-shadow: -2px 2px 60px rgba(41, 88, 255, 0.05);
+border-radius: 10px;
+}
+
+.focus-text {
+    background: linear-gradient(270deg, #EAEAEA 0%, #F2E03B 12.5%, #EBE8CF 66.15%, #EEDC39 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -43,3 +75,29 @@
     background: linear-gradient(90deg, rgba(27, 176, 190, 0.2) 0%, rgba(41, 88, 255, 0.2) 100%);
     border-radius: 10px;
 } */
+
+.aaa{
+    background: linear-gradient(270.59deg, #00021F 0.51%, #06121D 99.57%);
+}
+
+.border-gradient, .border-gradient-network{
+    position: relative;
+  }
+
+.border-gradient::before, .border-gradient-network::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 10px; 
+    padding: 1px; 
+    background:linear-gradient(45deg,#1BB0BE, #2958FF); 
+    -webkit-mask: 
+       linear-gradient(#fff 0 0) content-box, 
+       linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude; 
+}
+
+.border-gradient-network::before{
+    border-radius: 5px; 
+}

@@ -10,7 +10,7 @@ function Header({ open, setOpen }) {
     }
   }
   const links = [
-    { name: "Network Installation", link: "/network", child:true },
+    { name: "Network Installation", link: "/network-installation", child:true },
     { name: "Security", link: "/security" },
     { name: "Broadband", link: "/broadband" },
     { name: "Blog", link: "/blog" },
@@ -50,7 +50,7 @@ function Header({ open, setOpen }) {
           <div className="max-w-6xl mx-auto px-3 lg:px-0 flex justify-between py-2">
             <div className="flex items-center cursor-pointer">
               <NavLink to="/" className="text-xl font-bold">
-                <img src="/assets/logo.png" className="w-12 h-1w-12" alt="Logo" />
+                <img src="/assets/logo.png" className="w-14 h-14" alt="Logo" />
               </NavLink>
             </div>
             <div

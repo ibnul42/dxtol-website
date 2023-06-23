@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="bg-footer py-8 font-inter">
       <div className="max-w-6xl mx-auto px-2 grid grid-cols-12 gap-3">
         <div className="col-span-12 md:col-span-4 lg:col-span-3 from-[#EAEAEA] to-[#FFFFFF] bg-gradient-to-r bg-clip-text text-transparent">
-          <img src="/assets/logo.png" className="h-10 w-10" alt="" />
+          <img src="/assets/logo.png" className="h-14 w-14" alt="" />
           <p className="my-2">Lorem ipsum dolor sit amet consectetur. Tincidunt egestas condimentum at egestas vel dis sed sagittis. Fusce sagittis malesuada.</p>
         </div>
         <div className="col-span-12 md:col-span-4 lg:col-span-3">
@@ -30,9 +30,9 @@ const Footer = () => {
         <div className="col-span-12 md:col-span-12 lg:col-span-2">
           <p className="font-secure font-bold text-lg from-[#EAEAEA] to-[#FFFFFF] bg-gradient-to-r bg-clip-text text-transparent my-1">Join a Newsletter</p>
           <div className="flex rounded overflow-hidden">
-            <input type="text" className="min-w-0 px-2 py-2 placeholder:text-xs" placeholder="Input your email here" />
-            <div className="flex justify-center items-center h-auto w-8 bg-[#FDD10E] cursor-pointer">
-              <img src="/assets/icon/send.svg" className="w-4 h-4" alt="" />
+            <input type="text" className="min-w-0 px-2 py-3 placeholder:text-xs focus:text-black focus:text-xs focus:outline-0" placeholder="Input your email here" />
+            <div className="flex justify-center items-center h-auto w-10 bg-[#FDD10E] cursor-pointer">
+              <img src="/assets/icon/send.svg" className="w-4 h-4 pl-1" alt="" />
             </div>
           </div>
         </div>
