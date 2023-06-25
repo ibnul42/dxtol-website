@@ -5,7 +5,7 @@ const SecurityNetwork = () => {
     return (
         <div className='flex-1'>
             <Helmet>
-                <title>Network Installation</title>
+                <title>Security Network</title>
                 <link rel="canonical" href="" />
             </Helmet>
             <div className="bg-primary font-poppins">
@@ -16,7 +16,7 @@ const SecurityNetwork = () => {
                         <p className='text-gray text-sm lg:text-base my-2'>Lorem ipsum dolor sit amet consectetur. A viverra id laoreet sed. Non scelerisque cursus fames nulla facilisi. Netus metus ac ac varius tellus porttitor gravida id. Consectetur augue a adipiscing et sit pretium faucibus quis interdum. Sit in pretium sit et sed tempus rhoncus. Tortor lectus dolor eget amet. Dui lectus ut cursus massa sodales cursus diam at fermentum. Ullamcorper amet integer sed erat. Quam sem molestie in egestas est. Accumsan morbi lacus velit pulvinar donec. Cum hendrerit pellentesque mattis vel dictumst sit nibh. Semper morbi scelerisque donec viverra congue.</p>
                         <button className='px-6 py-3 btngradient text-white w-fit font-secure font-medium rounded flex gap-2 items-center'>Watch  Demo <img src="/assets/icon/play.svg" className='h-3 w-3' alt="play" /></button>
                     </div>
-                    <div className="h-auto flex items-center order-1 md:order-2">
+                    <div className="h-auto flex items-center justify-end order-1 md:order-2">
                         <img src="/assets/images/security1.svg" className='w-full lg:w-10/12' alt="security" />
                     </div>
                 </div>
