@@ -11,6 +11,8 @@ import Signup from "../Pages/Signup";
 import LoginForm from "../Pages/LoginForm";
 import Policy from "../Pages/Policy";
 import NetworkInstallation from "../Pages/NetworkInstallation";
+import SecurityNetwork from "../Pages/SecurityNetwork";
+import BroadbandNetwork from "../Pages/BroadbandNetwork";
 
 const adminLinks = [
   { titile: "Profile", path: "/admin/profile" },
@@ -82,6 +84,8 @@ const Layout = () => {
             <Route path="/loginform" element={<LoginForm />} />
             <Route path="/policy" element={<Policy />} />
             <Route path="/network-installation" element={<NetworkInstallation />} />
+            <Route path="/security-network" element={<SecurityNetwork />} />
+            <Route path="/broadband-network" element={<BroadbandNetwork />} />
             <Route path="*" element={<Home />} />
           </Routes>
         </div>

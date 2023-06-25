@@ -11,8 +11,8 @@ function Header({ open, setOpen }) {
   }
   const links = [
     { name: "Network Installation", link: "/network-installation", child:true },
-    { name: "Security", link: "/security" },
-    { name: "Broadband", link: "/broadband" },
+    { name: "Security", link: "/security-network" },
+    { name: "Broadband", link: "/broadband-network" },
     { name: "Blog", link: "/blog" },
     { name: "Store", link: "/store", child:true },
     { name: "Courses", link: "/courses", child:true },
