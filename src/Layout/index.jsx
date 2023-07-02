@@ -13,6 +13,7 @@ import Policy from "../Pages/Policy";
 import NetworkInstallation from "../Pages/NetworkInstallation";
 import SecurityNetwork from "../Pages/SecurityNetwork";
 import BroadbandNetwork from "../Pages/BroadbandNetwork";
+import EotNetwork from "../Pages/EotNetwork";
 
 const adminLinks = [
   { titile: "Profile", path: "/admin/profile" },
@@ -86,6 +87,7 @@ const Layout = () => {
             <Route path="/network-installation" element={<NetworkInstallation />} />
             <Route path="/security-network" element={<SecurityNetwork />} />
             <Route path="/broadband-network" element={<BroadbandNetwork />} />
+            <Route path="/eot-network" element={<EotNetwork />} />
             <Route path="*" element={<Home />} />
           </Routes>
         </div>
