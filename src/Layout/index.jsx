@@ -14,6 +14,7 @@ import NetworkInstallation from "../Pages/NetworkInstallation";
 import SecurityNetwork from "../Pages/SecurityNetwork";
 import BroadbandNetwork from "../Pages/BroadbandNetwork";
 import EotNetwork from "../Pages/EotNetwork";
+import HotelDeveloper from "../Pages/HotelDeveloper";
 
 const adminLinks = [
   { titile: "Profile", path: "/admin/profile" },
@@ -88,6 +89,7 @@ const Layout = () => {
             <Route path="/security-network" element={<SecurityNetwork />} />
             <Route path="/broadband-network" element={<BroadbandNetwork />} />
             <Route path="/eot-network" element={<EotNetwork />} />
+            <Route path="/hotel-developer" element={<HotelDeveloper />} />
             <Route path="*" element={<Home />} />
           </Routes>
         </div>
