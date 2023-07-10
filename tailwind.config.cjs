@@ -17,6 +17,7 @@ module.exports = {
         secure: ["Source Code Pro", "monospace"],
         roboto: ["Roboto", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
+        lato: ["Lato", "sans-serif"],
       },
       aspectRatio: {
         "4/3": "4/3",

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async'
+import ContactForm from '../../components/ContactForm'
 
 const SecurityNetwork = () => {
     return (
@@ -158,6 +159,7 @@ const SecurityNetwork = () => {
                     {/* service */}
                 </div>
             </div>
+            <ContactForm />
         </div>
     )
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async'
+import ContactForm from '../../components/ContactForm'
 
 const EotNetwork = () => {
   return (
@@ -69,6 +70,7 @@ const EotNetwork = () => {
                     </div>
                 </div>
             </div>
+            <ContactForm />
         </div>
   )
 }
