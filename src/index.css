@@ -18,13 +18,14 @@
     text-fill-color: transparent;
 }
 
-/* .bg-gradient_network{
-    background: linear-gradient(90deg, #1BB0BE 0%, #2958FF 100%);
+.text_gradient_store_card{
+    /* background: linear-gradient(90deg, #EAEAEA 100%, #F2E03B 100%, #EBE8CF 100%, #EEDC39 100%); */
+    background: linear-gradient(90deg, #EAEAEA, #F2E03B, #EBE8CF, #EEDC39);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-} */
+}
 
 .testimonial-gradient{
     background: linear-gradient(90deg, rgba(27, 176, 190, 0.2) 0%, rgba(41, 88, 255, 0.2) 100%);
@@ -100,6 +101,10 @@ border-radius: 10px;
 
 .border-gradient-network::before{
     border-radius: 5px; 
+}
+
+.border-gradient-store::before{
+    border-radius: 4px; 
 }
 
 
