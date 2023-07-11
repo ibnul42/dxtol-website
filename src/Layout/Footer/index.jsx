@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 const Footer = () => {
   return (
@@ -6,20 +7,20 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-2 grid grid-cols-12 gap-3">
         <div className="col-span-12 md:col-span-4 lg:col-span-3 from-[#EAEAEA] to-[#FFFFFF] bg-gradient-to-r bg-clip-text text-transparent">
           <img src="/assets/logo.png" className="h-14 w-14" alt="" />
-          <p className="my-2">Lorem ipsum dolor sit amet consectetur. Tincidunt egestas condimentum at egestas vel dis sed sagittis. Fusce sagittis malesuada.</p>
+          <p className="my-2">VSATUi is a trading name of VitalSAT Communication Solutions part of the Digital Empire Group.</p>
         </div>
         <div className="col-span-12 md:col-span-4 lg:col-span-3">
-          <p className="font-secure font-bold text-lg from-[#EAEAEA] to-[#FFFFFF] bg-gradient-to-r bg-clip-text text-transparent my-1">Location</p>
-          <p className="flex gap-3 text-sm items-center text-[rgba(234,234,234,0.6)] py-2"><img src="/assets/icon/location_on.svg" className="h-4 w-4" alt="" />8819 Street Road. Scotland</p>
-          <p className="flex gap-3 text-sm items-center text-[rgba(234,234,234,0.6)] py-2"><img src="/assets/icon/message.svg" className="h-4 w-4" alt="" />outline@address.com</p>
-          <p className="flex gap-3 text-sm items-center text-[rgba(234,234,234,0.6)] py-2"><img src="/assets/icon/call.svg" className="h-4 w-4" alt="" />+1 30000 00000</p>
+          <p className="font-secure font-bold text-lg from-[#EAEAEA] to-[#FFFFFF] bg-gradient-to-r bg-clip-text text-transparent my-1">Contact Information</p>
+          <p className="flex gap-3 text-sm items-center text-[rgba(234,234,234,0.6)] py-2"><img src="/assets/icon/location_on.svg" className="h-4 w-4" alt="" />Head Office: VitalSAT, Watertight House, 22-24 Napier Road, South Croydon, Surrey, CR2 6HG</p>
+          {/* <p className="flex gap-3 text-sm items-center text-[rgba(234,234,234,0.6)] py-2"><img src="/assets/icon/message.svg" className="h-4 w-4" alt="" />outline@address.com</p> */}
+          <p className="flex gap-3 text-sm items-center text-[rgba(234,234,234,0.6)] py-2"><img src="/assets/icon/call.svg" className="h-4 w-4" alt="" /><a href="tel:+08081643636">0808 164 3636</a></p>
         </div>
         <div className="col-span-6 md:col-span-2">
           <p className="font-secure font-bold text-lg from-[#EAEAEA] to-[#FFFFFF] bg-gradient-to-r bg-clip-text text-transparent my-1">Services</p>
-          <p className="flex gap-3 text-sm items-center text-[rgba(234,234,234,0.6)] py-2">Network Installation</p>
-          <p className="flex gap-3 text-sm items-center text-[rgba(234,234,234,0.6)] py-2">Security</p>
-          <p className="flex gap-3 text-sm items-center text-[rgba(234,234,234,0.6)] py-2">Broadband</p>
-          <p className="flex gap-3 text-sm items-center text-[rgba(234,234,234,0.6)] py-2">EoT</p>
+          <Link to="/network-installation" className="flex gap-3 text-sm items-center text-[rgba(234,234,234,0.6)] py-2">Network Installation</Link>
+          <Link to="/security-network" className="flex gap-3 text-sm items-center text-[rgba(234,234,234,0.6)] py-2">Security</Link>
+          <Link to="/broadband-network" className="flex gap-3 text-sm items-center text-[rgba(234,234,234,0.6)] py-2">Broadband</Link>
+          <Link to="/eot-network" className="flex gap-3 text-sm items-center text-[rgba(234,234,234,0.6)] py-2">EoT</Link>
         </div>
         <div className="col-span-6 md:col-span-2">
           <p className="font-secure font-bold text-lg from-[#EAEAEA] to-[#FFFFFF] bg-gradient-to-r bg-clip-text text-transparent my-1">Sitemap</p>

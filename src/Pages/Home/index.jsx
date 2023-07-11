@@ -2,6 +2,25 @@ import React from 'react'
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
+const services = [
+  {
+    title: 'Network Installations',
+    desc: 'We provide profession and bespoke managed network installations from network switches to rack mounted fire suppression systems. We can design, build and install any size network & take care of all the network securities for you. We are able to support and service any network and offer remote support and maintenance contracts for any size of network.'
+  },
+  {
+    title: 'Building Security Systems',
+    desc: 'We provide, installation, servicing & support Unifi’s Protect CCTV systems & Unifi Access door entry systems, fully integrating these into your Unifi network if required. Everything can be managed by one device enabling you and us to efficiently manage and support your businesses security and ensuring your building is as secure and staff are safe at all times.'
+  },
+  {
+    title: 'Alarm Systems',
+    desc: 'We also specialise in intruder alarm systems and are able to fully secure your premises with motion & door sensors, brake glass sensors, inferred curtains, leak detection, panic alarms and many other alarm security products. All connected to a main hub wirelessly.'
+  },
+  {
+    title: 'Hotels & Developments',
+    desc: 'We provide bespoke installation for hotels, campsites & leisure centres. We build your WiFi and ethernet network and securities round your business’s requirements. We are also able to provide broadband infrastructure and wireless networks for new developments houses or flats.'
+  }
+]
+
 const Home = () => {
   const texts = ['Global Logistics Extraordinaire', 'Home Theater Geek', 'Computer Enthusiast', 'Photographer', 'Creative', 'Creative', 'Tuffer', 'Stylist']
 
@@ -17,25 +36,24 @@ const Home = () => {
       <div className="bg-primary font-poppins">
         <div className="max-w-6xl mx-auto px-2 py-8 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
           <div className="flex flex-col gap-2 h-auto justify-center">
-            <p className='text-yellow font-secure font-bold text-xl uppercase'>Empowering Networks:</p>
-            <p className='text-xl md:text-2xl lg:text-5xl text-gradient font-secure font-extrabold'>VitalSAT Ubiquiti Networks Innovative Technologies</p>
-            <p className='text-gray text-lg my-2'>Helped more than 200+ startups to develop their website lorum ipsump lorum ipsump lorum ipsump lorum ipsump lorum ipsum plorum ipsump</p>
-            <button className='px-6 py-3 btngradient text-white w-fit font-secure font-extrabold rounded'>Talk with Us</button>
+            {/* <p className='text-yellow font-secure font-bold text-xl uppercase'>Empowering Networks:</p> */}
+            <p className='text-xl md:text-2xl lg:text-5xl text-gradient font-secure font-extrabold'>VitalSAT Ubiquiti-Networks (VSATUi) Ubiquiti Unifi & Edge Specialist</p>
+            <p className='text-gray text-lg my-2'>Providing professional & qualified installations, servicing, maintenance & advice for all your Unifi network, Protect, Access, Talk, Connect & UID services, as well as Edge Networks and Ajax Alarm Systems.</p>
+            <Link to="/" className='px-6 py-3 btngradient text-white w-fit font-secure font-extrabold rounded'>Contact Us</Link>
           </div>
           <div className="">
-            <img src="/assets/images/home1.png" className='w-full max-w-[687px] max-h-[542px]' alt="" />
+            <img src="/assets/images/home1.png" className='w-full max-w-[687px] max-h-[542px]' alt="home" />
           </div>
         </div>
       </div>
       <div className="bg-secondary font-poppins">
         <div className="max-w-6xl mx-auto px-2 py-8 bg-secondary grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-40">
           <div className="flex flex-col gap-2 h-auto justify-center">
-            <p className='text-yellow font-secure font-semibold text-base uppercase'>At our core:</p>
-            <p className='text-xl md:text-2xl lg:text-3xl text-gradient font-secure font-extrabold'>About us Section About us Section
-              Lorem ipsum </p>
-            <p className='text-gray text-base my-2'>Lorem ipsum dolor sit amet consectetur. Purus massa sit nulla non non bibendum. A mauris amet in massa diam id. Sit nec sed pulvinar et mi consectetur feugiat. Congue sit iaculis quis suspendisse turpis mauris integer cras aliquam. Volutpat nunc id sodales interdum risus erat. Augue consectetur diam orci scelerisque. Vitae amet a aliquam sit. Orci.</p>
+            <p className='text-yellow font-secure font-semibold text-base uppercase'>Who Are We?</p>
+            <p className='text-xl md:text-2xl lg:text-3xl text-gradient font-secure font-extrabold'>We are not just specialists, we are perfectionists!</p>
+            <p className='text-gray text-base my-2'>VSATUi is part of the Digital Empire Group and is a sub-section of VitalSAT communication Solutions. This part of the business was formed in 2021 to promote and support Ubiquiti products specifically, along with Ajax Security Alarm Systems. Our services are supplied across the UK primarily to businesses but we do also support consumer customers. We are one of the leading Ubiquiti specialists in the UK and can provide an all-in-one service from design to installation, monitoring, support and everything else in-between.</p>
             <div className="flex gap-3 font-inter">
-              <button className='px-6 py-3 font-inter bg-[rgba(41,88,255,.99)] hover:bg-[rgba(41,88,255,0.6)] transition delay-75 text-white w-fit font-normal rounded'>Learn More</button>
+              {/* <button className='px-6 py-3 font-inter bg-[rgba(41,88,255,.99)] hover:bg-[rgba(41,88,255,0.6)] transition delay-75 text-white w-fit font-normal rounded'>Learn More</button> */}
               <button class="px-6 py-3 font-inter text-[#2958FF] border border-[#2958FF] hover:bg-[#2958FF] hover:text-white w-fit font-normal rounded flex items-center gap-2">
                 Video Intro
                 <img src="/assets/icon/video.svg" alt="video" class="w-4 h-4 text-white" />
@@ -43,7 +61,7 @@ const Home = () => {
             </div>
           </div>
           <div className="">
-            <p className='my-4 text-gradient font-secure font-bold text-3xl'>VitalSAT AT A GLANCE</p>
+            <p className='my-4 text-gradient font-secure font-bold text-3xl'>We Provide & Support</p>
             <div className="grid gap-5 grid-cols-1 md:grid-cols-2">
               <div className="card-background flex flex-col px-3 py-6 h-40 text-[rgba(253,209,14,0.5)] justify-center items-center gap-2">
                 <img src="/assets/icon/handshake.svg" className='h-14 w-14' alt="handshake" />
@@ -73,107 +91,74 @@ const Home = () => {
         <div className="max-w-6xl mx-auto px-2 py-8 md:gap-40">
           <p className='text-yellow font-secure font-semibold text-base uppercase'>Our Services</p>
           <div className="grid grid-cols-12 gap-3">
-            <p className='col-span-12 md:col-span-7 text-xl md:text-2xl lg:text-4xl text-gradient font-secure font-bold flex flex-col'><span>We Provide the Best</span> <span>Service Ubiquiti Unifi network</span></p>
-            <p className='col-span-12 md:col-span-5 text-gray text-base my-2'>Lorem ipsum dolor sit amet consectetur. Purus massa sit nulla non non bibendum. A mauris amet in massa diam id. Sit nec sed pulvinar et mi consectetur feugiat. Congue</p>
+            <p className='col-span-12 my-3 text-xl md:text-2xl lg:text-4xl text-gradient font-secure font-bold flex flex-col'>Here are some services you may be interested in</p>
+            {/* <p className='col-span-12 md:col-span-5 text-gray text-base my-2'>Lorem ipsum dolor sit amet consectetur. Purus massa sit nulla non non bibendum. A mauris amet in massa diam id. Sit nec sed pulvinar et mi consectetur feugiat. Congue</p> */}
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 lg:grid-cols-4 my-5">
-            <div className="rounded-lg flex flex-col gap-4 justify-center bg-gradient-to-r from-[rgba(27,176,190,0.2)] to-[rgba(41,88,255,0.2)] py-2 px-3">
-              <p className='text-[#A0BCF8] text-6xl font-secure font-bold opacity-25'>01</p>
-              <p className='text-gradient font-secure text-xl uppercase font-bold'>Network Installation</p>
-              <p className='font-poppins text-gray'>Lorem ipsum dolor sit amet con sec tetur. Purus massa sit nu ll a non non bibendum. A mauris ame</p>
-              <div className="flex justify-end">
-                <div className="h-10 w-10 rounded-full bg-gradient-to-r from-[#1BB0BE] to-[#1BB0BE] p-[2px] cursor-pointer">
-                  <div className="h-full w-full rounded-full bg-[#232323] flex justify-center items-center -rotate-90">
-                    <img src="/assets/icon/arrowDown.svg" alt="arrowDown" className='h-5 w-5' />
+            {services && services.map((item, index) => (
+              <div key={index} className={`rounded-lg flex flex-col gap-4 justify-between bg-gradient-to-r from-[rgba(27,176,190,0.2)] to-[rgba(41,88,255,0.2)] py-2 px-3 ${index === 1 ? 'bg-[#FFD700]' : ''}`}>
+                {/* <p className='text-[#A0BCF8] text-6xl font-secure font-bold opacity-25'>01</p> fdd10e */}
+                <p className='text-gradient font-secure text-xl uppercase font-bold'>{item.title}</p>
+                <p className={`font-poppins text-sm text-gray ${index === 1 ? 'hover:text-black' : ''}`}>{item.desc}</p>
+                <div className="flex justify-end">
+                  <div className="h-10 w-10 rounded-full bg-gradient-to-r from-[#1BB0BE] to-[#1BB0BE] p-[2px] cursor-pointer">
+                    <div className="h-full w-full rounded-full bg-[#232323] flex justify-center items-center -rotate-90">
+                      <img src="/assets/icon/arrowDown.svg" alt="arrowDown" className='h-5 w-5' />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="rounded-lg flex flex-col gap-4 justify-center bg-[#FDD10E] py-2 px-3">
-              <p className='text-[#A0BCF8] text-6xl font-secure font-bold opacity-25'>01</p>
-              <p className='text-gradient font-secure text-xl uppercase font-bold'>Security</p>
-              <p className='font-poppins text-gray'>Lorem ipsum dolor sit amet con sec tetur. Purus massa sit nu ll a non non bibendum. A mauris ame</p>
-              <div className="flex justify-end">
-                <div className="h-10 w-10 rounded-full bg-gradient-to-r from-[#1BB0BE] to-[#1BB0BE] p-[2px] cursor-pointer">
-                  <div className="h-full w-full rounded-full bg-[#232323] flex justify-center items-center -rotate-90">
-                    <img src="/assets/icon/arrowDown.svg" alt="arrowDown" className='h-5 w-5' />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="rounded-lg flex flex-col gap-4 justify-center bg-gradient-to-r from-[rgba(27,176,190,0.2)] to-[rgba(41,88,255,0.2)] py-2 px-3">
-              <p className='text-[#A0BCF8] text-6xl font-secure font-bold opacity-25'>01</p>
-              <p className='text-gradient font-secure text-xl uppercase font-bold'>Hotels & Developers</p>
-              <p className='font-poppins text-gray'>Lorem ipsum dolor sit amet con sec tetur. Purus massa sit nu ll a non non bibendum. A mauris ame</p>
-              <div className="flex justify-end">
-                <div className="h-10 w-10 rounded-full bg-gradient-to-r from-[#1BB0BE] to-[#1BB0BE] p-[2px] cursor-pointer">
-                  <div className="h-full w-full rounded-full bg-[#232323] flex justify-center items-center -rotate-90">
-                    <img src="/assets/icon/arrowDown.svg" alt="arrowDown" className='h-5 w-5' />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="rounded-lg flex flex-col gap-4 justify-center bg-gradient-to-r from-[rgba(27,176,190,0.2)] to-[rgba(41,88,255,0.2)] py-2 px-3">
-              <p className='text-[#A0BCF8] text-6xl font-secure font-bold opacity-25'>01</p>
-              <p className='text-gradient font-secure text-xl uppercase font-bold'>Eot</p>
-              <p className='font-poppins text-gray'>Lorem ipsum dolor sit amet con sec tetur. Purus massa sit nu ll a non non bibendum. A mauris ame</p>
-              <div className="flex justify-end">
-                <div className="h-10 w-10 rounded-full bg-gradient-to-r from-[#1BB0BE] to-[#1BB0BE] p-[2px] cursor-pointer">
-                  <div className="h-full w-full rounded-full bg-[#232323] flex justify-center items-center -rotate-90">
-                    <img src="/assets/icon/arrowDown.svg" alt="arrowDown" className='h-5 w-5' />
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
       <div className="bg-secondary">
         <div className="max-w-6xl mx-auto px-2 py-8">
           <div className="flex flex-col justify-center items-center">
-            <p className='text-yellow font-secure font-semibold uppercase text-center'>What we do:</p>
+            <p className='text-yellow font-secure font-semibold uppercase text-center'>More about our services</p>
             <div className="max-w-2xl">
-              <p className='text-xl text-center md:text-2xl lg:text-4xl text-gradient font-secure font-extrabold flex flex-col'><span>We Provide the Best</span> <span>Service Ubiquiti Unifi network</span></p>
+              <p className='text-xl text-center md:text-2xl lg:text-4xl text-gradient font-secure font-extrabold flex flex-col'><span>We provide FREE standard</span> <span>quotations for all our services</span></p>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-10 md:my-20">
             <div className="flex flex-col justify-center h-auto">
               <img src="/assets/images/network.png" className='w-full max-w-[658px] max-h-[438px]' alt="" />
             </div>
             <div className="flex flex-col gap-2 h-auto justify-center px-8">
               <p className='text-[#A0BCF8] text-5xl font-secure font-semibold opacity-25 my-3'>01</p>
-              <p className='text-xl md:text-2xl lg:text-4xl text-gradient font-secure font-extrabold'>Network Installation</p>
-              <p className='text-gray text-xs my-2'>Lorem ipsum dolor sit amet consectetur. Massa turpis et felis commodo adipiscing neque dui ut. At nec massa diam ut augue. Mattis semper facilisis dictum odio in lobortis. Pellentesque lectus neque massa at ultrices elit sit habitant. Ut semper vitae ut integer. Tellus interdum sit ultricies fusce ut bibendum a. Ipsum turpis nisl.</p>
+              <p className='text-xl md:text-2xl lg:text-4xl text-gradient font-secure font-extrabold'>PC & Data Network Infrastructure</p>
+              <p className='text-gray text-base my-2'><span>We start by visiting your premises to go over your businesses network requirements and take a survey or the site. We then design the network and create a network topology to work from. This includes all the required devices for the
+                installation, the configuration for each device and the securities along with any other specific requirements that have been requested.</span> <span>Although we provide the network and support to some of the biggest companies in the UK, around 63% of our customers are SME’s. Our standard quotations are free with no obligation to use our service.</span></p>
               <button className='bg-[rgba(41,88,255,.99)] hover:bg-[rgba(41,88,255,0.6)] transition delay-75 px-6 py-3 rounded w-fit'>Contact Us Today</button>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-10 md:my-20">
             <div className="flex flex-col gap-2 h-auto justify-center px-8 order-2 md:order-1">
               <p className='text-[#A0BCF8] text-5xl font-secure font-semibold opacity-25 my-3'>01</p>
-              <p className='text-xl md:text-2xl lg:text-4xl text-gradient font-secure font-extrabold'>Security</p>
-              <p className='text-gray text-xs my-2'>Lorem ipsum dolor sit amet consectetur. Massa turpis et felis commodo adipiscing neque dui ut. At nec massa diam ut augue. Mattis semper facilisis dictum odio in lobortis. Pellentesque lectus neque massa at ultrices elit sit habitant. Ut semper vitae ut integer. Tellus interdum sit ultricies fusce ut bibendum a. Ipsum turpis nisl.</p>
+              <p className='text-xl md:text-2xl lg:text-4xl text-gradient font-secure font-extrabold'>Security Systems</p>
+              <p className='text-gray text-base my-2'>We will visit your premises and complete a site survey checking for all camera and sensor locations. If door access is also required, we will discuss with you how you would like to manage and monito these systems. We then go a design the security system including any specific requirements you have requested. Standard quotations are free with no obligation to use our services.</p>
               <button className='bg-[rgba(41,88,255,.99)] hover:bg-[rgba(41,88,255,0.6)] transition delay-75 px-6 py-3 rounded w-fit'>Contact Us Today</button>
             </div>
             <div className="flex flex-col justify-center h-auto order-1 md:order-2">
               <img src="/assets/images/network.png" className='w-full max-w-[658px] max-h-[438px]' alt="" />
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-10 md:my-20">
             <div className="flex flex-col justify-center h-auto">
               <img src="/assets/images/network.png" className='w-full max-w-[658px] max-h-[438px]' alt="" />
             </div>
             <div className="flex flex-col gap-2 h-auto justify-center px-8">
               <p className='text-[#A0BCF8] text-5xl font-secure font-semibold opacity-25 my-3'>01</p>
-              <p className='text-xl md:text-2xl lg:text-4xl text-gradient font-secure font-extrabold'>Network Installation</p>
-              <p className='text-gray text-xs my-2'>Lorem ipsum dolor sit amet consectetur. Massa turpis et felis commodo adipiscing neque dui ut. At nec massa diam ut augue. Mattis semper facilisis dictum odio in lobortis. Pellentesque lectus neque massa at ultrices elit sit habitant. Ut semper vitae ut integer. Tellus interdum sit ultricies fusce ut bibendum a. Ipsum turpis nisl.</p>
+              <p className='text-xl md:text-2xl lg:text-4xl text-gradient font-secure font-extrabold'>Wireless</p>
+              <p className='text-gray text-base my-2'>Need wireless coverage or, need to connect to a building hundreds or thousands of meters away to the same network without having to order another broadband service or use VPN’s? we got you covered. We can provide wireless building to building connections with 10GB connectivity between locations. We can also provide full wireless coverage for any area such are parks, stadiums, shopping centres & any other location which requires a large wireless network. Like with all our installation services, standard quotations are free and you are not obligated to use our services.</p>
               <button className='bg-[rgba(41,88,255,.99)] hover:bg-[rgba(41,88,255,0.6)] transition delay-75 px-6 py-3 rounded w-fit'>Contact Us Today</button>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-10 md:my-20">
             <div className="flex flex-col gap-2 h-auto justify-center px-8 order-2 md:order-1">
               <p className='text-[#A0BCF8] text-5xl font-secure font-semibold opacity-25 my-3'>01</p>
               <p className='text-xl md:text-2xl lg:text-4xl text-gradient font-secure font-extrabold'>Security</p>
-              <p className='text-gray text-xs my-2'>Lorem ipsum dolor sit amet consectetur. Massa turpis et felis commodo adipiscing neque dui ut. At nec massa diam ut augue. Mattis semper facilisis dictum odio in lobortis. Pellentesque lectus neque massa at ultrices elit sit habitant. Ut semper vitae ut integer. Tellus interdum sit ultricies fusce ut bibendum a. Ipsum turpis nisl.</p>
+              <p className='text-gray text-base my-2'>Lorem ipsum dolor sit amet consectetur. Massa turpis et felis commodo adipiscing neque dui ut. At nec massa diam ut augue. Mattis semper facilisis dictum odio in lobortis. Pellentesque lectus neque massa at ultrices elit sit habitant. Ut semper vitae ut integer. Tellus interdum sit ultricies fusce ut bibendum a. Ipsum turpis nisl.</p>
               <button className='bg-[rgba(41,88,255,.99)] hover:bg-[rgba(41,88,255,0.6)] transition delay-75 px-6 py-3 rounded w-fit'>Contact Us Today</button>
             </div>
             <div className="flex flex-col justify-center h-auto order-1 md:order-2">
